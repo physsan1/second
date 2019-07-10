@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  gather_facts: False
+
+  tasks:
+
+    - name: Provision a set of instances
+      ec2:
+         key_name: work
+         group: test
+         instance_type: t2.micro
+         image:  ami-035b3c7efe6d061d5
+         wait: true
+         exact_count: 5
+         count_tag:
+            Name: Demo
+         instance_tags:
+            Name: Demo
+      register: ec2
