@@ -8,7 +8,7 @@
     - name: Provision a set of instances
       ec2:
          key_name: work
-	 region: "{{region}}"
+	 region: "{{ region }}"
          group: test
          instance_type: t2.micro
          image:  ami-035b3c7efe6d061d5
