@@ -1,12 +1,14 @@
 ---
 - hosts: localhost
   gather_facts: False
+  region: us-east-1
 
   tasks:
 
     - name: Provision a set of instances
       ec2:
          key_name: work
+	 region: "{{region}}"
          group: test
          instance_type: t2.micro
          image:  ami-035b3c7efe6d061d5
