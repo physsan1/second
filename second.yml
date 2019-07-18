@@ -12,8 +12,5 @@
          instance_type: t2.micro
          image: ami-0b898040803850657
          state: absent
-         
-         
          vpc_subnet_id: "{{subnet}}"
-         assign_public_ip: yes
          instance_ids: "{{instance_id}}"
