@@ -16,3 +16,4 @@
          count: 1
          vpc_subnet_id: "{{subnet}}"
          assign_public_ip: yes
+         id: "{{instance_id}}"
