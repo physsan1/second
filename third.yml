@@ -1,3 +1,8 @@
+---
+
+
+
+
 - name: Create a virtual machine on given ESXi hostname
   vmware_guest:
     validate_certs: no
