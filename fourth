@@ -1,0 +1,12 @@
+- hosts: localhost
+  gather_facts: False
+  
+
+  tasks:
+
+    - name: Trying to get Facts
+      vmware_guest_facts:
+        datacenter: vCloud-East
+        validate_certs: no
+        name: vCloud-East/vm/Sandbox
+        debug: facts
