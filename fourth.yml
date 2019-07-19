@@ -4,7 +4,7 @@
     - name: Trying to get Facts
       vmware_guest_facts:
         datacenter: vCloud-East
-       	validate_certs: no
+       validate_certs: no
         folder: vCloud-East/vm/Sandbox
         name: "{{name}}"
       debug: facts
