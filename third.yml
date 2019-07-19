@@ -13,6 +13,7 @@
         state: shutdownguest
         guest_id: centos64Guest
         resource_pool: Div_184
+        folder: /VCloud-East/Sandbox
         disk:
         - size_gb: 50
           type: thin
