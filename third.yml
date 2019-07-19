@@ -8,7 +8,7 @@
     - name: Create a virtual machine on given ESXi hostname
       vmware_guest:
         validate_certs: no
-        datacenter: VCloud-East
+        datacenter: vCloud-East
         cluster: vCloud
         name: tower-test-01
         state: poweredon
