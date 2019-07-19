@@ -1,5 +1,5 @@
 - hosts: localhost
-  gather_facts: False
+  
   
 
   tasks:
@@ -9,4 +9,4 @@
         datacenter: vCloud-East
         validate_certs: no
         name: vCloud-East/vm/Sandbox
-        debug: facts
+      debug: facts
