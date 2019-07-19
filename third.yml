@@ -1,0 +1,22 @@
+- name: Create a virtual machine on given ESXi hostname
+  vmware_guest:
+    validate_certs: no
+    cluster: vCloud
+    name: tower-test-01
+    state: shutdownguest
+    guest_id: centos64Guest
+    resource_pool: Div_184
+    disk:
+    - size_gb: 50
+      type: thin
+      datastore: G-TINTRI-04
+    hardware:
+      memory_mb: 512
+      num_cpus: 4
+      scsi: paravirtual
+    networks:
+    - name: VLAN_175
+      vlan: 175
+    wait_for_ip_address: no
+  delegate_to: localhost
+  register: deploy_vm
