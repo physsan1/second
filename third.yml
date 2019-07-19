@@ -11,7 +11,7 @@
         datacenter: vCloud-East
         cluster: vCloud
         name: tower-test-02
-        state: shutdownguest
+        state: poweredoff
         guest_id: centos64Guest
         resource_pool: Div_184
         folder: vCloud-East/vm/Sandbox
