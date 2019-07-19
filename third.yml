@@ -10,7 +10,7 @@
         validate_certs: no
         cluster: vCloud
         name: tower-test-01
-        state: shutdownguest
+        state: poweredon
         guest_id: centos64Guest
         resource_pool: Div_184
         folder: /VCloud-East/Sandbox
